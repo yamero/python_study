@@ -5,6 +5,9 @@ class Matrix(object):
     def __init__(self, lst2d):
         self._values = [row[:] for row in lst2d]
 
+    def __iter__(self):
+        return self._values.__iter__()
+
     @classmethod
     def zero(self, r, c):
         ''' 获取一个r行c列的零矩阵 '''

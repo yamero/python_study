@@ -1,5 +1,6 @@
 from  playLA.Matrix import Matrix
 from playLA.Vector import Vector
+import numpy as np
 
 if __name__ == '__main__':
     m1 = Matrix([[1, 2], [3, 4]])
@@ -21,7 +22,7 @@ if __name__ == '__main__':
     #print(+m2)
     #print(-m2)
     #print(m1.dot_mat(m2))
-    print(m1.T())
+    #print(m1.T())
 
     v1 = Vector([3, 2])
     #print(v1)
@@ -29,3 +30,6 @@ if __name__ == '__main__':
 
     z = Matrix.zero(3, 2)
     #print(z)
+
+    m3 = np.array([234, 29])
+    print(m3)
